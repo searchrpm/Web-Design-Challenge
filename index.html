@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Web Visualization Dashboard Latitude</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="gray">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">Web Visualization Dashboard</a>
+              
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+              
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Plots
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="/Users/MRamirez/Desktop/DataViz/official_homework/Web-Design-Challenge/WebVisualizations/visualizations/temperature.html">Temperature</a>
+                        <a class="dropdown-item" href="/Users/MRamirez/Desktop/DataViz/official_homework/Web-Design-Challenge/WebVisualizations/visualizations/windspeed.html">Windspeed</a>
+                        <a class="dropdown-item" href="/Users/MRamirez/Desktop/DataViz/official_homework/Web-Design-Challenge/WebVisualizations/visualizations/windspeed.html">Humidity</a>
+                        <a class="dropdown-item" href="/Users/MRamirez/Desktop/DataViz/official_homework/Web-Design-Challenge/WebVisualizations/visualizations/cloudiness.html">Cloudiness</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Users/MRamirez/Desktop/DataViz/official_homework/Web-Design-Challenge/WebVisualizations/comparisons.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Users/MRamirez/Desktop/DataViz/official_homework/Web-Design-Challenge/WebVisualizations/data.html">Data</a>
+                </li> 
+            </ul>
+        </div> 
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-7 padbox white">
+                <h1>Summary: Latitude vs. X</h1>
+                <hr/>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="/Users/MRamirez/Desktop/DataViz/official_homework/Web-Design-Challenge/WebVisualizations/assets/temperaturemap.png" class="img-fluid">
+                        </div>
+                        <div class="col-6">
+                            <p>
+                                The purpose of this project was to analyze how weather changes as you get closer
+                                to the equator.  To accomplish this analysis, we first pulled data from the OpenWeatherMap
+                                API to assemble a dataset on over 500 cities.
+                            </p>
+                            <p>
+                                After assembling the dataset, we used Matplotlib to plot various aspects of the weather
+                                vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity.
+                                This site provides the source data and visualizations created as part of the analysis, as well
+                                as explanations and descriptions of any trends and correlations witnessed.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 padbox white">
+                <h1>Visualizations</h1>
+                <hr/>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-3">
+                            <a href="/Users/MRamirez/Desktop/DataViz/official repo/Web-Design-Challenge/WebVisualizations/visualizations/temperature.html">
+                                <img src="/Users/MRamirez/Desktop/DataViz/official repo/Web-Design-Challenge/WebVisualizations/assets/temperaturemap.png" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-3">
+                            <a href="/Users/MRamirez/Desktop/DataViz/official repo/Web-Design-Challenge/WebVisualizations/visualizations/windspeed.html">
+                                <img src="/Users/MRamirez/Desktop/DataViz/official repo/Web-Design-Challenge/WebVisualizations/assets/windymap.png" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-3">
+                            <a href="/Users/MRamirez/Desktop/DataViz/official repo/Web-Design-Challenge/WebVisualizations/visualizations/humidity.html">
+                                <img src="/Users/MRamirez/Desktop/DataViz/official repo/Web-Design-Challenge/WebVisualizations/assets/humiditymap.png" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-3">
+                            <a href="/Users/MRamirez/Desktop/DataViz/official repo/Web-Design-Challenge/WebVisualizations/visualizations/cloudiness.html">
+                                <img src="/Users/MRamirez/Desktop/DataViz/official repo/Web-Design-Challenge/WebVisualizations/assets/cloudymap.png" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
